@@ -1,15 +1,11 @@
 <template>
-  <HomePage/>
+  <img src="/assets/image.jpg" class="img-fluid" alt="">
 </template>
-
 <script lang="ts">
 import { defineComponent } from 'vue';
-import HomePage from './pages/HomePage.vue';
-
 export default defineComponent({
-  name: 'App',
+  name: 'ImageComponent',
   components: {
-    HomePage
   }
 });
 </script>
