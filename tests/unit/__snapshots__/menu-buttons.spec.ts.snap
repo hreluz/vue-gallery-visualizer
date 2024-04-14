@@ -1,0 +1,9 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`MenuButtons.vue should match the snapshot 1`] = `
+<div class="row my-3">
+  <div class="col"><button type="button" disabled="" class="btn btn-outline-primary previous-button">Previous</button></div>
+  <div class="col"><button type="button" class="btn btn-outline-warning random-button">Random</button></div>
+  <div class="col"><button type="button" class="btn btn-outline-primary next-button">Next</button></div>
+</div>
+`;
