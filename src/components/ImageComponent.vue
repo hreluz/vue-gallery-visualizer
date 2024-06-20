@@ -1,11 +1,22 @@
 <template>
-  <img src="/assets/image.jpg" class="img-fluid" alt="">
+  <img v-if="image" :src="`${image.path}`" class="img-fluid" alt="">
 </template>
+
 <script lang="ts">
-import { defineComponent } from 'vue';
+import { defineComponent, PropType } from 'vue';
+import {Image as ImageInterface} from '@/interfaces/images';
+
 export default defineComponent({
   name: 'ImageComponent',
-  components: {
+  props: {
+    image: {
+      type: Object as PropType<ImageInterface>,
+      required: true
+    }
+  },
+  setup() {
+    return {
+    }
   }
 });
 </script>
